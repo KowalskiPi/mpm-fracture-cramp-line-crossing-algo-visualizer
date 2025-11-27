@@ -132,7 +132,7 @@ const DebuggerPanel: React.FC<DebuggerPanelProps> = ({ step, totalSteps }) => {
 
         <div className="text-gray-600 pl-4 mt-2"># Cancellation</div>
         <div className={step.description.includes("Result") ? "bg-yellow-900/50 text-yellow-100 pl-4" : "text-gray-600 pl-4"}>
-           if f2 > 0 and f3 > 0: min...
+           if f2 {'>'} 0 and f3 {'>'} 0: min...
            <br/>if f2 % 2 == 1: field = 2
            <br/>elif f3 % 2 == 1: field = 3
         </div>
@@ -145,7 +145,7 @@ const DebuggerPanel: React.FC<DebuggerPanelProps> = ({ step, totalSteps }) => {
            if len(fields) == 3: warning
         </div>
         <div className={`pl-8 ${getLineClass('norm')}`}>
-           remap fields [1, 2] -> [3, 2]
+           remap fields [1, 2] {'->'} [3, 2]
         </div>
 
       </div>
